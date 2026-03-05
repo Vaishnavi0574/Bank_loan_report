@@ -44,23 +44,8 @@ Use SQL queries to understand:
 * Total payments received
 * Monthly loan distribution
 
-### 3. Data Aggregation
 
-Example SQL query used for monthly loan analysis:
-
-```sql
-SELECT
-    EXTRACT(MONTH FROM issue_date) AS month_number,
-    TRIM(TO_CHAR(issue_date, 'Month')) AS month_name,
-    COUNT(id) AS total_loan_applications,
-    SUM(loan_amount) AS total_funded_amount,
-    SUM(total_payment) AS total_amount_received
-FROM bank_loan
-GROUP BY 1,2
-ORDER BY 1;
-```
-
-### 4. Data Visualization
+### 3. Data Visualization
 
 * Connect **Tableau to PostgreSQL**
 * Create dashboards showing:
@@ -81,24 +66,6 @@ The Tableau dashboard provides insights such as:
 * Comparison between funded amount and repayments
 * Key performance indicators (KPIs)
 
----
-
-## 📁 Project Structure
-
-```
-Bank-Loan-Analysis
-│
-├── data/
-│   └── bank_loan_dataset.csv
-│
-├── sql/
-│   └── loan_analysis_queries.sql
-│
-├── tableau/
-│   └── bank_loan_dashboard.twbx
-│
-└── README.md
-```
 
 ---
 
@@ -119,17 +86,20 @@ Bank-Loan-Analysis
 * Total Funded Amount
 * Total Amount Received
 * Monthly Loan Trends
-
+* Add loan status analysis (good vs bad loans)v
 ---
 
 ## 📌 Future Improvements
 
-* Add loan status analysis (good vs bad loans)
 * Build predictive models for loan default risk
 * Automate ETL pipeline
 * Deploy dashboard to Tableau Server or Tableau Public
 
 ---
+
+## 📊 Tableau Dashboard
+
+![Bank Loan Dashboard](screenshots/dashboard1.png)
 
 ## 👤 Author
 
