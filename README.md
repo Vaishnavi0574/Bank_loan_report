@@ -99,8 +99,12 @@ The Tableau dashboard provides insights such as:
 
 ## 📊 Tableau Dashboard
 
-![Bank Loan Dashboard](Dashboard1 (1).png)
+![Bank Loan Dashboard](Dashboard1(1).png)
+
+---
 ![Bank Loan Dashboard](Dashboard2.png)
+
+---
 ![Bank Loan Dashboard](Dashboard3.png)
 
 ## 👤 Author
